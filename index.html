@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IDANCE · студия танца в Туле: танцы для детей и взрослых</title>
+<meta name="description" content="Студия танца IDANCE в Туле: группы по возрастам 4-6, 7-9, 10-13, 14-17 и 20+ лет, от народного до уличного танца. Запись на первое занятие по телефону.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="IDANCE">
+<meta property="og:title" content="Студия танца IDANCE в Туле – танцы для детей и взрослых">
+<meta property="og:description" content="Группы для новичков и опытных, индивидуальный подход к каждому танцору, дружный коллектив.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero-m.webp" media="(max-width: 860px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero.webp" media="(min-width: 861px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Onest:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Onest:wght@400;500;600&display=swap"></noscript>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2716%27 fill=%27%23ffb000%27/%3E%3Crect x=%277%27 y=%2711%27 width=%274%27 height=%2710%27 rx=%271%27 fill=%27%230b0b0c%27/%3E%3Crect x=%2721%27 y=%2711%27 width=%274%27 height=%2710%27 rx=%271%27 fill=%27%230b0b0c%27/%3E%3Crect x=%2711%27 y=%2714.7%27 width=%2710%27 height=%272.6%27 fill=%27%230b0b0c%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"DanceSchool","name":"IDANCE","description":"Студия танца в Туле: группы по возрастам от 4 лет до 20+, от народного до уличного танца.","url":"","image":"/assets/og.jpg","telephone":"+79207471515","address":{"@type":"PostalAddress","streetAddress":"ул. Смидович, 12Б","addressLocality":"Тула","addressCountry":"RU"}}
+</script>
+<style>
+  /* ---- тема: шесть цветов, два шрифта (IDANCE: чёрный + оранжево-жёлтый из логотипа) ---------- */
+  .v-page {
+    --v-canvas: #0b0b0c; --v-surface: #1a1a1d;
+    --v-ink: #f4f1ea; --v-ink-soft: #aaa49a;
+    --v-accent: #ffb000; --v-accent-ink: #1a0f00; --v-red: #e5252a;
+    --v-accent-deep: #ffb000;           /* мелкий акцентный текст: цены, шаги, лейблы */
+    --v-font-display: "Oswald", "Arial Narrow", system-ui, sans-serif;
+    --v-font-text: "Onest", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 0 0 0;
+    --v-radius: 18px;
+    --v-display-weight: 700;
+    --v-section: clamp(2.5rem, 5.5vw, 4.75rem);
+    --v-track-tight: -0.02em;
+    /* полупрозрачные подложки считаем от палитры, чтобы смена палитры была одной правкой */
+    --v-canvas-88: color-mix(in oklab, var(--v-canvas) 88%, transparent);
+    --v-accent-14: color-mix(in oklab, var(--v-accent) 14%, transparent);
+    --v-accent-32: color-mix(in oklab, var(--v-accent) 32%, transparent);
+    --v-surface-tint: color-mix(in oklab, var(--v-surface) 86%, var(--v-accent));
+  }
+  html, body { background: #0b0b0c; }
+  .v-page .v-display { text-transform: uppercase; letter-spacing: .01em; }
+  .v-page .v-display--xl { text-transform: uppercase; }
+  .v-page .v-display { line-height: 1.04; }
+  .v-page .v-display--xl { line-height: 1.02; }
+  .v-page .v-lede { font-weight: 400; }
+  .v-page .v-label { font-weight: 600; }
+  .v-page .v-btn { font-size: var(--v-t-base); font-weight: 600; box-shadow: var(--v-e1), inset 0 0 0 1px color-mix(in oklab, var(--v-accent-ink) 12%, transparent); }
+  .v-page h3 { font-weight: 600; }
+  .v-page .v-label--accent { color: var(--v-accent-deep); }
+
+  /* ---- шапка -------------------------------------------------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between;
+    padding: var(--v-3) var(--v-gutter); gap: var(--v-4);
+    background: linear-gradient(to bottom, var(--v-canvas-88), transparent);
+    transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: var(--v-canvas-88); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-weight: 700; color: var(--v-accent); font-size: var(--v-t-base); letter-spacing: -.01em; text-decoration: none;
+    display: inline-flex; align-items: center; gap: .5em; min-height: 44px; white-space: nowrap; }
+  .bar__mark img { width: 2.2em; height: 2.2em; border-radius: 8px; display: block; }
+  .bar__right { display: flex; align-items: center; gap: var(--v-4); }
+  .bar__tel { text-decoration: none; font-weight: 600; font-size: var(--v-t-sm); color: var(--v-ink); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); }
+  @media (max-width: 700px) {
+    .bar__tel { display: none; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; font-size: .95rem; }
+    .bar__right { gap: var(--v-2); }
+    .bar__mark { font-size: .95rem; }
+  }
+  /* узкий телефон: кнопка шапки целиком в экране (знак без кружка, на самых узких поля шапки 16 px) */
+  @media (max-width: 430px) { .bar { gap: var(--v-2); } .bar__mark { font-size: .8rem; } .bar__mark img { width: 1.9em; height: 1.9em; } .bar .v-btn { padding: 0 .7em; } }
+  @media (max-width: 380px) { .bar { padding-inline: 16px; } }
+  @media (max-width: 370px) { .bar__mark { font-size: .72rem; } }
+  @media (max-width: 860px) { .bar.is-scrolled { background: color-mix(in oklab, var(--v-canvas) 96%, transparent); } }
+
+  /* ---- hero: групповая тренировка в светлом зале с зеркальной стеной ---------- */
+  .hero__back img { position: absolute; max-width: none; width: 108%; height: 108%; left: -4%; top: 3%; object-fit: cover; object-position: left top; }
+  .hero__col { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(to right, rgb(11 11 12 / .96) 0%, rgb(11 11 12 / .8) 30%, transparent 56%); }
+  .hero__copy { bottom: clamp(4.5rem, 13vh, 9rem); max-width: min(48rem, 62vw); }
+  .hero__label { display: block; margin-bottom: var(--v-4); }
+  .hero__copy .v-display { font-size: clamp(2.6rem, 1.3rem + 4.2vw, 5.2rem); line-height: .98; }
+  .hero__label::before { content: ""; display: inline-block; width: .6em; height: .6em; background: var(--v-red); margin-right: .6em; transform: rotate(45deg); }
+  .hero__copy .v-lede { margin-top: var(--v-5); max-width: 44ch; font-size: clamp(1.05rem, .95rem + .5vw, 1.35rem); }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .hero__tel { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
+  .hero__tel b { font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  .hero__note { position: absolute; z-index: 3; right: var(--v-gutter); bottom: clamp(4.5rem, 13vh, 9rem); text-align: right; display: grid; gap: .25em; font-size: var(--v-t-sm); color: var(--v-ink);
+    padding: var(--v-4) var(--v-5); border-radius: var(--v-radius); background: color-mix(in oklab, var(--v-surface) 78%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: var(--v-e1); }
+  .hero__note .v-nums { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); color: var(--v-accent); letter-spacing: -.01em; }
+  @media (max-width: 860px) {
+    /* телефон: верх сцены – холст с текстом, фото занимает нижние 72 % и сшивается с холстом по белой стене */
+    .hero__back { inset: auto 0 0 0; height: 72%; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 14%); mask-image: linear-gradient(to bottom, transparent, #000 14%); }
+    .hero__back img { width: 100%; height: 100%; left: 0; top: 0; object-position: center bottom; }
+    .hero__col { background: linear-gradient(to bottom, var(--v-canvas) 0%, var(--v-canvas) 28%, transparent 46%); }
+    .v-page .hero__copy { top: 4.6rem; bottom: auto; max-width: none; }
+    .hero__copy .v-display { font-size: clamp(2rem, 1.1rem + 5.2vw, 2.9rem); }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-3); max-width: 36ch; }
+    .hero__label { margin-bottom: var(--v-3); }
+    .hero__cta { margin-top: var(--v-4); gap: var(--v-2) var(--v-5); }
+    .hero__note { display: none; }
+  }
+  @media (max-width: 600px) and (max-height: 700px) { .hero__back { height: 64%; } .hero__copy .v-lede { display: none; } }
+
+  /* ---- знакомо: строки боли, поворот, широкий кадр со шторкой ------------- */
+  .poka__head { display: grid; gap: var(--v-3); margin-bottom: var(--v-6); max-width: 52rem; }
+  .poka__grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: var(--v-9); align-items: start; margin-bottom: var(--v-7); }
+  .rows li { padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); display: grid; gap: var(--v-1); }
+  .rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .rows h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); letter-spacing: -.01em; line-height: 1.2; }
+  .rows p { color: var(--v-ink-soft); max-width: 46ch; text-wrap: pretty; }
+  .turn { position: sticky; top: clamp(5rem, 12vh, 7rem); padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e2), var(--v-edge); display: grid; gap: var(--v-3); }
+  .turn__text { font-size: var(--v-t-lg); line-height: 1.35; text-wrap: pretty; }
+  .turn__text b { font-weight: 600; }
+  .poka__fig { position: relative; aspect-ratio: 2.3 / 1; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2), var(--v-edge); }
+  .poka__fig img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+  .poka__fig figcaption { position: absolute; left: var(--v-5); bottom: var(--v-5); z-index: 1; font-size: var(--v-t-sm); color: var(--v-ink); max-width: 34ch;
+    padding: var(--v-3) var(--v-4); border-radius: calc(var(--v-radius) - 6px); background: color-mix(in oklab, var(--v-surface) 82%, transparent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+  @media (max-width: 860px) {
+    .poka__grid { grid-template-columns: 1fr; gap: var(--v-6); margin-bottom: var(--v-7); }
+    .turn { position: static; padding: var(--v-5); }
+    .poka__fig { aspect-ratio: 4 / 3; }
+    .poka__fig img { object-position: 80% center; }
+    .poka__fig figcaption { left: var(--v-4); right: var(--v-4); bottom: var(--v-4); max-width: none; }
+  }
+
+  /* ---- как проходит первая: фото слева, шаги вдоль линии справа ------------ */
+  .first { display: grid; grid-template-columns: .7fr 1.3fr; gap: var(--v-9); align-items: start; }
+  .first__fig { position: sticky; top: clamp(5rem, 12vh, 7rem); aspect-ratio: 3 / 4; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2), var(--v-edge); }
+  .first__fig > div { position: absolute; inset: -8% 0; will-change: transform; }
+  .first__fig img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+  .first__fig figcaption { position: absolute; left: var(--v-4); right: var(--v-4); bottom: var(--v-4); z-index: 1; font-size: var(--v-t-sm); color: var(--v-ink);
+    padding: var(--v-3) var(--v-4); border-radius: calc(var(--v-radius) - 6px); background: color-mix(in oklab, var(--v-surface) 82%, transparent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+  .first__copy { display: grid; gap: var(--v-5); }
+  .first__copy .v-lede { max-width: 46ch; }
+  .steps { display: grid; gap: 0; position: relative; margin-top: var(--v-3); }
+  .steps li { position: relative; display: grid; grid-template-columns: 2.6rem 1fr; gap: var(--v-4); padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); }
+  .steps li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .steps__n { width: 2.6rem; height: 2.6rem; border-radius: 50%; display: grid; place-items: center; background: var(--v-accent); color: var(--v-accent-ink);
+    font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-sm); box-shadow: var(--v-e1); }
+  .steps li:last-child .steps__n { background: var(--v-red); color: #fff; }
+  .steps h3 { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); letter-spacing: -.01em; line-height: 1.2; text-wrap: balance; }
+  .steps p { color: var(--v-ink-soft); max-width: 50ch; text-wrap: pretty; margin-top: var(--v-1); }
+  .first__note { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 56ch; }
+  .first__note b { color: var(--v-ink); font-weight: 600; }
+  @media (max-width: 860px) {
+    .first { grid-template-columns: 1fr; gap: var(--v-6); }
+    .first__fig { position: relative; top: auto; aspect-ratio: 4 / 3; }
+    .first__fig img { object-position: center 88%; }
+    .steps li { grid-template-columns: 2.2rem 1fr; gap: var(--v-3); padding: var(--v-4) 0; }
+    .steps__n { width: 2.2rem; height: 2.2rem; }
+  }
+
+  /* ---- фирменный ход: карточки учеников переворачиваются «до → после» ------- */
+  .ba { --p: var(--v-p, 0); height: 100%; display: grid; grid-template-columns: .9fr 1.1fr; gap: var(--v-8); align-items: center;
+    padding: clamp(4.5rem, 11vh, 6.5rem) var(--v-gutter) clamp(1.5rem, 4vh, 3rem); }
+  .ba__copy { display: grid; gap: var(--v-4); max-width: 34rem; }
+  .ba__copy .v-display--md { font-size: clamp(1.8rem, 1.2rem + 2vw, 3rem); }
+  .ba__copy .v-body { max-width: 44ch; }
+  .ba__legend { display: flex; align-items: center; gap: var(--v-3); font-size: var(--v-t-sm); color: var(--v-ink-soft); margin-top: var(--v-2); }
+  .ba__legend i { width: 2.2rem; height: .3rem; border-radius: 999px; background: linear-gradient(to right, var(--v-hair-strong) 50%, var(--v-accent) 50%); }
+  .ba__cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--v-5); align-items: start; }
+  .card { perspective: 1400px; display: grid; gap: var(--v-3); }
+  .card__in { position: relative; aspect-ratio: 3 / 4; transform-style: preserve-3d; will-change: transform;
+    transform: rotateY(calc(180deg * var(--f))); }
+  .card:nth-child(1) .card__in { --f: clamp(0, (var(--p) - .12) / .2, 1); }
+  .card:nth-child(2) .card__in { --f: clamp(0, (var(--p) - .4) / .2, 1); }
+  .card:nth-child(3) .card__in { --f: clamp(0, (var(--p) - .68) / .2, 1); }
+  .card:nth-child(1) .card__state { --f: clamp(0, (var(--p) - .12) / .2, 1); }
+  .card:nth-child(2) .card__state { --f: clamp(0, (var(--p) - .4) / .2, 1); }
+  .card:nth-child(3) .card__state { --f: clamp(0, (var(--p) - .68) / .2, 1); }
+  .face { position: absolute; inset: 0; border-radius: var(--v-radius); overflow: hidden; -webkit-backface-visibility: hidden; backface-visibility: hidden;
+    background: var(--v-surface); box-shadow: var(--v-e2), var(--v-edge); display: grid; place-items: center; }
+  .face img { width: 100%; height: 100%; object-fit: cover; }
+  .face--post { transform: rotateY(180deg); background: var(--v-surface-tint); }
+  .face--post::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 3px var(--v-accent); pointer-events: none; }
+  .card__cap { display: grid; gap: .15em; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .card__cap b { color: var(--v-ink); font-weight: 600; }
+  .card__state { position: relative; height: 1.4em; font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-xs); letter-spacing: .06em; text-transform: uppercase; }
+  .card__state span { position: absolute; left: 0; top: 0; }
+  .card__state span:first-child { opacity: clamp(0, 1 - 2 * var(--f), 1); }
+  .card__state span:last-child { opacity: clamp(0, 2 * var(--f) - 1, 1); color: var(--v-accent-deep); }
+  .ba__note { grid-column: 1 / -1; font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 62ch; }
+  @media (max-width: 860px) {
+    .ba { grid-template-columns: 1fr; grid-template-rows: auto auto auto; align-content: start; align-items: start; gap: var(--v-5); padding-top: 4.6rem; }
+    .ba__copy { gap: var(--v-2); }
+    .ba__copy .v-display--md { font-size: var(--v-t-xl); }
+    .ba__cards { gap: var(--v-3); }
+    .card { gap: var(--v-2); }
+    .face { border-radius: 12px; }
+    .face--post::after { box-shadow: inset 0 0 0 2px var(--v-accent); }
+    .card__cap { font-size: .95rem; }
+    .card__state { font-size: .95rem; }
+    .ba__note { font-size: .95rem; }
+  }
+  @media (max-width: 600px) and (max-height: 760px) { .ba__copy .v-body { display: none; } .ba__note { display: none; } }
+  @media (max-width: 860px) { .card__cap > span:last-child { display: none; } .card__cap b { font-size: .95rem; line-height: 1.2; } }
+  @media (prefers-reduced-motion: reduce) { .v-page .card__in, .v-page .card__state { --f: 1; } }
+
+  /* ---- форматы и цены: строки и карточка «что входит» с фото зала ----------- */
+  .prices { display: grid; grid-template-columns: 1.3fr .8fr; gap: var(--v-9); align-items: start; }
+  .plist li { display: grid; grid-template-columns: 1fr auto; gap: var(--v-1) var(--v-5); padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); align-items: baseline; }
+  .plist li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .plist .name { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); letter-spacing: -.01em; line-height: 1.2; }
+  .plist .note { grid-column: 1; font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 46ch; }
+  .plist .price { grid-column: 2; grid-row: 1 / span 2; align-self: start; font-weight: 600; font-size: var(--v-t-base); color: var(--v-accent-deep); white-space: nowrap; }
+  .plist li.is-trial .name { color: var(--v-accent-deep); }
+  .prices__incl { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 62ch; }
+  .prices__incl b { color: var(--v-ink); font-weight: 600; }
+  .prices__aside { position: sticky; top: clamp(5rem, 12vh, 7rem); }
+  .incl { border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e2), var(--v-edge); overflow: hidden; display: grid; }
+  .incl__fig { position: relative; aspect-ratio: 16 / 10; }
+  .incl__fig img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
+  .incl__fig figcaption { position: absolute; left: var(--v-4); bottom: var(--v-4); font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink);
+    padding: .4em .8em; border-radius: 999px; background: color-mix(in oklab, var(--v-surface) 85%, transparent); }
+  .incl__body { padding: var(--v-5) var(--v-6) var(--v-6); display: grid; gap: var(--v-3); }
+  .incl li { padding: var(--v-3) 0; border-top: 1px solid var(--v-hair); display: grid; gap: .2em; }
+  .incl li:last-child { padding-bottom: 0; }
+  .incl li b { font-weight: 600; }
+  .incl li span { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) {
+    .prices { grid-template-columns: 1fr; gap: var(--v-7); }
+    .prices__aside { position: static; }
+    .incl__body { padding: var(--v-4) var(--v-5) var(--v-5); }
+    .plist .name { font-size: var(--v-t-base); font-weight: 600; }
+  }
+  @media (max-width: 520px) {
+    .plist li { grid-template-columns: 1fr; }
+    .plist .price { grid-column: 1; grid-row: auto; }
+  }
+
+  /* ---- тренер: портрет со шторкой, факты ------------------------------------ */
+  .tr { display: grid; grid-template-columns: .72fr 1.28fr; gap: var(--v-9); align-items: center; }
+  .tr__fig { position: relative; aspect-ratio: 3 / 4; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2), var(--v-edge); }
+  .tr__fig img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+  .tr__copy { display: grid; gap: var(--v-4); }
+  .tr__copy .v-lede { max-width: 44ch; }
+  .tr__name { font-size: clamp(1.9rem, 1.3rem + 2.2vw, 3.2rem); }
+  .tr__facts { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-4) var(--v-6); margin-top: var(--v-3); }
+  .tr__facts li { display: grid; gap: .2em; padding-top: var(--v-3); border-top: 1px solid var(--v-hair); }
+  .tr__facts b { font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); font-weight: 600; }
+  .tr__facts span { text-wrap: pretty; }
+  .tr__for { display: grid; gap: var(--v-2); padding: var(--v-5); margin-top: var(--v-2); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1), var(--v-edge); }
+  .tr__for li { padding: .35em 0; border-top: 1px solid var(--v-hair); text-wrap: pretty; }
+  .tr__for li:first-of-type { border-top: 0; }
+  @media (max-width: 860px) {
+    .tr { grid-template-columns: 1fr; gap: var(--v-6); }
+    .tr__fig { aspect-ratio: 4 / 3; }
+    .tr__fig img { object-position: center 25%; }
+    .tr__facts { grid-template-columns: 1fr; gap: var(--v-3); }
+  }
+
+  /* ---- отзывы с Яндекс.Карт: одна крупная цитата и две малые --------------- */
+  .reviews__head { display: flex; flex-wrap: wrap; gap: var(--v-6); align-items: end; justify-content: space-between; margin-bottom: var(--v-7); }
+  .reviews__rating { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-3); font-size: var(--v-t-sm); }
+  .reviews__rating a { display: inline-flex; align-items: center; min-height: 44px; }
+  .reviews__num { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-2xl); line-height: 1; }
+  .reviews__stars { --size: 1.1rem; display: inline-block; width: calc(var(--size) * 5); height: var(--size);
+    background: linear-gradient(90deg, var(--v-accent-deep) calc(var(--r, 0) / 5 * 100%), var(--v-hair-strong) 0);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x; }
+  .reviews__stars--sm { --size: .8rem; vertical-align: middle; }
+  .reviews__list { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--v-6); align-items: start; }
+  .reviews__item { padding-top: var(--v-5); border-top: 1px solid var(--v-hair); }
+  .reviews__item--big .reviews__text { font-size: var(--v-t-lg); line-height: 1.4; }
+  .reviews__text { text-wrap: pretty; }
+  .reviews__meta { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .reviews__meta b { color: var(--v-ink); font-weight: 600; }
+  .reviews__fact { flex-basis: 100%; font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .reviews__list { grid-template-columns: 1fr; } .reviews__head { margin-bottom: var(--v-5); } }
+
+  /* ---- финал: запись на пробную, двое отдыхают после тренировки -------------- */
+  .close { height: 100%; display: grid; grid-template-rows: 1fr auto; padding: clamp(5.5rem, 13vh, 8.5rem) var(--v-gutter) var(--v-6);
+    background: radial-gradient(60rem 40rem at calc(var(--v-mx, .5) * 100%) calc(var(--v-my, .5) * 100%), var(--v-accent-14), transparent 60%); }
+  .close__inner { align-self: center; display: grid; grid-template-columns: 1.2fr .8fr; gap: var(--v-9); align-items: center; padding-bottom: var(--v-7); }
+  .close__inner .v-display { margin-bottom: var(--v-5); }
+  .close__inner .v-lede { max-width: 44ch; }
+  .close__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .close__tel { font-family: var(--v-font-display); font-weight: 500; font-size: var(--v-t-lg); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; color: var(--v-ink); letter-spacing: -.01em; }
+  .close__hint { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 46ch; }
+  .close__meta { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-3) var(--v-6); color: var(--v-ink-soft); margin-top: var(--v-6); padding-top: var(--v-5); border-top: 1px solid var(--v-hair); font-size: var(--v-t-sm); }
+  .close__meta b { color: var(--v-ink); font-weight: 600; display: block; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; margin-bottom: .2em; }
+  .close__fig { position: relative; aspect-ratio: 3 / 4; max-height: 62svh; justify-self: end; width: min(100%, 24rem); border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2), var(--v-edge); transform: rotate(2deg); }
+  /* финал появляется по времени, а не от прокрутки: у pin 1.1 ход всего 0,1 экрана, реплика от --v-p выскакивала рывком (правка Евгения 19.09.2026) */
+  .v-page .close__copy[data-v-in] > * { transform: translateY(22px); transition-duration: .9s; }
+  .v-page .close__copy[data-v-in].v-on > * { transform: none; }
+  .v-page .close__fig[data-v-in][data-v-in-self] { transform: translateY(28px) rotate(2deg); transition-duration: 1.1s; transition-delay: .3s; }
+  .v-page .close__fig[data-v-in][data-v-in-self].v-on { transform: rotate(2deg); }
+  @media (prefers-reduced-motion: reduce) { .v-page .close__copy[data-v-in] > * { transform: none; } .v-page .close__fig[data-v-in][data-v-in-self] { opacity: 1; transform: rotate(2deg); transition: none; } }
+  .close__fig img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+  .foot { display: flex; justify-content: space-between; gap: var(--v-4); padding: var(--v-5) 0 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); flex-wrap: wrap; }
+  @media (max-width: 860px) {
+    .close { padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) calc(var(--v-4) + env(safe-area-inset-bottom)); }
+    .close__inner { grid-template-columns: 1fr; gap: var(--v-5); padding-bottom: var(--v-5); }
+    .close__inner .v-display { font-size: var(--v-t-xl); margin-bottom: var(--v-3); }
+    .close__tel { font-size: var(--v-t-base); }
+    .close__fig { display: none; }
+    .close__meta { margin-top: var(--v-5); padding-top: var(--v-4); gap: var(--v-2) var(--v-4); }
+    .foot__more { display: none; }
+  }
+  @media (max-width: 600px) and (max-height: 760px) { .close__hint { display: none; } .close__meta { grid-template-columns: 1fr 1fr; } }
+
+  /* телефон: подписи и лейблы не мельче 15 px (в конце, чтобы перебить правила компонентов) */
+  @media (max-width: 860px) {
+    .hero__tel, .rows p, .turn__text, .poka__fig figcaption, .first__fig figcaption, .steps p, .first__note, .plist .note, .prices__incl,
+    .incl li span, .incl__fig figcaption, .tr__facts span, .tr__for li, .reviews__meta, .reviews__rating, .reviews__fact, .close__hint, .close__meta, .foot,
+    .v-page .v-label, .tr__facts b, .close__meta b, .ba__legend, .steps__n, .card__cap, .card__cap span { font-size: .95rem; }
+  }
+  /* правки после QA */
+  .hero__note > span { font-size: max(var(--v-t-sm), .95rem); }
+  .close__hint a { display: inline-flex; align-items: center; min-height: 44px; }
+
+  /* сгенерированная графика: текстура под секциями, неон под финалом, взрыв у заголовка */
+  #poka, #trener { position: relative; isolation: isolate; }
+  #poka::before, #trener::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background: url(assets/texture-wall.webp) center / cover; opacity: .22; }
+  .close { background:
+    linear-gradient(to right, rgb(11 11 12 / .94) 0%, rgb(11 11 12 / .7) 45%, rgb(11 11 12 / .25) 100%),
+    url(assets/bg-neon.webp) center / cover; }
+  .close__copy { position: relative; }
+  .burst { position: absolute; z-index: 0; width: clamp(5.5rem, 12vw, 9rem); height: auto; right: 0; top: calc(-1 * clamp(2rem, 5vw, 3.5rem)); transform: rotate(10deg); pointer-events: none; }
+  @media (max-width: 860px) { .burst { width: 5rem; top: -3rem; } }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top"><img src="assets/logo.webp" alt="" width="40" height="40">IDANCE</a>
+    <nav class="bar__right" aria-label="Быстрые ссылки">
+      <a class="bar__tel" href="tel:+79207471515">+7 (920) 747-15-15</a>
+      <a class="v-btn" href="tel:+79207471515" rel="noopener">Записаться на первое занятие</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1 · УЗНАВАНИЕ: команда на сцене, оффер слева -->
+    <section id="top" data-v-act="pin" data-v-span="1.5" data-v-drift="#0b0b0c" aria-label="Студия танца IDANCE в Туле">
+      <div data-v-stage>
+        <div class="v-layer hero__back" data-v-parallax="-0.45">
+          <picture>
+            <source media="(max-width: 860px)" srcset="assets/hero-m.webp">
+            <img src="assets/hero.webp" alt="Команда студии IDANCE в красных костюмах на сцене соревнований" width="1920" height="1080" fetchpriority="high">
+          </picture>
+        </div>
+        <div class="hero__col" aria-hidden="true"></div>
+
+        <div class="hero__note" data-v-cue="0 0.6 0" data-v-rise="0">
+          <span class="v-label">Идёт новый набор</span>
+          <span class="v-nums">4-6 · 7-9 · 10-13 · 14-17 · 20+</span>
+          <span>Группы по возрастам, для новичков и опытных</span>
+        </div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.9 0 0.1">
+          <span class="v-label hero__label">IDANCE · студия танца · Тула</span>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Танцы в Туле для детей и взрослых</h1>
+          <p class="v-lede">От народного до уличного. Группы по возрасту от 4 лет до 20+, для новичков и опытных.</p>
+          <div class="hero__cta">
+            <a class="v-btn" href="tel:+79207471515" rel="noopener">Записаться на первое занятие</a>
+            <a class="hero__tel" href="tel:+79207471515">или позвоните <b>+7 (920) 747-15-15</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ЦЕНА БЕЗДЕЙСТВИЯ и ПОВОРОТ: страшно прийти впервые -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#121214" id="poka" aria-label="Почему страшно прийти на первое занятие">
+      <div class="v-wrap">
+        <div class="poka__head" data-v-in data-v-stagger="70">
+          <span class="v-label v-label--accent">Знакомо?</span>
+          <h2 class="v-display v-display--lg">Хочется танцевать, но страшно прийти в первый раз</h2>
+        </div>
+        <div class="poka__grid">
+          <ul class="rows" data-v-in data-v-stagger="80">
+            <li><h3>«Там все уже умеют»</h3><p>Без опыта кажется, что в зале будете лишним. Поэтому в студии есть группы для новичков отдельно от опытных танцоров.</p></li>
+            <li><h3>Непонятно, в какую группу</h3><p>Ребёнку 6 или 11, взрослому за 20 – у каждого свой темп. Группы собраны по возрастам: 4-6, 7-9, 10-13, 14-17 и 20+ лет.</p></li>
+            <li><h3>Не знаю, какой стиль мне подойдёт</h3><p>Хип-хоп, джаз, хореография, народный танец – в IDANCE многообразие стилей, от народного до уличного. Выбрать поможем.</p></li>
+          </ul>
+          <div class="turn" data-v-in data-v-in-self>
+            
+            <p class="turn__text">Начните с первого занятия: <b>индивидуальный подход к каждому</b>, дружный коллектив и позитив. Записаться можно по телефону, в сообщениях группы ВКонтакте или лично Илье Токареву, основателю студии.</p>
+          </div>
+        </div>
+        <figure class="poka__fig" data-v-reveal="left" data-v-reveal-at="0.4 0.68">
+          <img src="assets/poka.webp" alt="Танцоры студии в синих и белых костюмах на сцене конкурса «Битва жанров»" width="1600" height="696" loading="lazy" decoding="async">
+          <figcaption>Команда студии на конкурсе-фестивале «Битва жанров»</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3 · ДОКАЗАТЕЛЬСТВО: как записаться и прийти -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#0b0b0c" id="pervaya" aria-label="Как попасть на первое занятие">
+      <div class="v-wrap first">
+        <figure class="first__fig" data-v-in data-v-in-self>
+          <div data-v-parallax="0.3">
+            <img src="assets/first.webp" alt="Юные танцоры студии с медалями на фоне баннера чемпионата" width="1200" height="1600" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Дети студии после соревнований, с медалями</figcaption>
+        </figure>
+        <div class="first__copy" data-v-in data-v-stagger="70">
+          
+          <h2 class="v-display v-display--lg">Три шага до зала</h2>
+          <p class="v-lede">Опыт не нужен. Расскажите возраст – подскажем подходящую группу.</p>
+          <ol class="steps">
+            <li><span class="steps__n">1</span><div><h3>Позвоните или напишите</h3><p>По телефону 8-920-747-15-15, в сообщениях группы ВКонтакте или в личные сообщения Илье Токареву.</p></div></li>
+            <li><span class="steps__n">2</span><div><h3>Назовите возраст и стиль, который интересует</h3><p>Подберём группу: 4-6, 7-9, 10-13, 14-17 лет или 20+. Новичкам – группы для новичков.</p></div></li>
+            <li><span class="steps__n">3</span><div><h3>Приходите на первое занятие</h3><p>Ул. Смидович, 12Б, цокольный этаж. Дружный коллектив и позитив ждут вас.</p></div></li>
+          </ol>
+          <p class="first__note"><b>Условия первого занятия</b> и что взять с собой назовём по телефону при записи.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · ДОКАЗАТЕЛЬСТВО: студия и сцена, фирменный ход «карточки переворачиваются» (фото из группы ВКонтакте) -->
+    <section id="ucheniki" data-v-act="pin" data-v-span="1.6" data-v-drift="#121214" aria-label="От студии до сцены">
+      <div data-v-stage>
+        <div class="ba">
+          <div class="ba__copy">
+            
+            <h2 class="v-display v-display--md">Из зала – на сцену и на подиум</h2>
+            <p class="v-body v-soft">Ребята студии постоянно участвуют в соревнованиях, а каждое лето выступают в Центральном парке имени Белоусова – об этом пишут родители в отзывах на Яндекс Картах.</p>
+            <p class="ba__legend"><i aria-hidden="true"></i>Карточки переворачиваются по мере прокрутки: студия, потом сцена</p>
+          </div>
+          <ul class="ba__cards">
+            <li class="card">
+              <div class="card__in">
+                <div class="face face--pre"><img src="assets/c1-pre.webp" alt="Танцор в стойке на руках на красном фоне студии" width="600" height="800" loading="lazy" decoding="async"></div>
+                <div class="face face--post"><img src="assets/c1-post.webp" alt="Команда студии на сцене конкурса" width="600" height="800" loading="lazy" decoding="async"></div>
+              </div>
+              <p class="card__cap"><span class="card__state" aria-hidden="true"><span>Студия</span><span>Сцена</span></span><b>«Битва жанров»</b><span>международный конкурс-фестиваль</span></p>
+            </li>
+            <li class="card">
+              <div class="card__in">
+                <div class="face face--pre"><img src="assets/c2-pre.webp" alt="Девочка в чёрном костюме в светлом зале с лучами света" width="600" height="800" loading="lazy" decoding="async"></div>
+                <div class="face face--post"><img src="assets/c2-post.webp" alt="Группа на сцене в бежевых костюмах" width="600" height="800" loading="lazy" decoding="async"></div>
+              </div>
+              <p class="card__cap"><span class="card__state" aria-hidden="true"><span>Студия</span><span>Сцена</span></span><b>Постановки команды</b><span>номера разные по характеру</span></p>
+            </li>
+            <li class="card">
+              <div class="card__in">
+                <div class="face face--pre"><img src="assets/c3-pre.webp" alt="Команда студии в красных куртках в студии" width="600" height="800" loading="lazy" decoding="async"></div>
+                <div class="face face--post"><img src="assets/c3-post.webp" alt="Кубки и грамоты студии IDANCE на полу" width="600" height="800" loading="lazy" decoding="async"></div>
+              </div>
+              <p class="card__cap"><span class="card__state" aria-hidden="true"><span>Студия</span><span>Награды</span></span><b>Кубки и грамоты</b><span>призовые места на соревнованиях</span></p>
+            </li>
+            <li class="ba__note">Фотографии взяты из группы студии ВКонтакте. Названия конкурсов – с баннеров на снимках.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · ВЫБОР: группы по возрастам, цены -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#0b0b0c" id="formaty" aria-label="Группы по возрастам и цены">
+      <div class="v-wrap prices">
+        <div class="v-stack" data-v-in data-v-stagger="60">
+          
+          <h2 class="v-display v-display--lg">Найдите группу по возрасту</h2>
+          <p class="v-body v-soft">Стили: хип-хоп, хореография, джаз, народные и другие. Расписание и стоимость абонемента назовём при записи.</p>
+          <ul class="plist">
+            <li class="is-trial"><span class="name">4-6 лет</span><span class="note">Группа для самых юных танцоров</span><span class="price v-nums">уточнить</span></li>
+            <li><span class="name">7-9 лет</span><span class="note">Для новичков и тех, кто уже занимался</span><span class="price v-nums">уточнить</span></li>
+            <li><span class="name">10-13 лет</span><span class="note">Разные стили, можно выступать с командой</span><span class="price v-nums">уточнить</span></li>
+            <li><span class="name">14-17 лет</span><span class="note">Подростковые группы, новички и опытные</span><span class="price v-nums">уточнить</span></li>
+            <li><span class="name">20+ лет</span><span class="note">Взрослые группы, с нуля или с опытом</span><span class="price v-nums">уточнить</span></li>
+          </ul>
+          <p class="prices__incl"><b>Цены и расписание</b> называем по телефону при записи: они зависят от группы.</p>
+        </div>
+        <aside class="prices__aside" data-v-in data-v-in-self>
+          <div class="incl" data-v-tilt="4">
+            <figure class="incl__fig">
+              <img src="assets/studio.webp" alt="Команда студии в красных куртках на красном фоне" width="1200" height="750" loading="lazy" decoding="async">
+              <figcaption>Ул. Смидович, 12Б · цоколь</figcaption>
+            </figure>
+            <div class="incl__body">
+              
+              <ul>
+                <li><b>Индивидуальный подход</b><span>К каждому танцору, с учётом возраста.</span></li>
+                <li><b>Новички и опытные</b><span>Отдельные группы для начинающих и для тех, кто танцует давно.</span></li>
+                <li><b>Многообразие стилей</b><span>От народного до уличного танца.</span></li>
+                <li><b>Дружный коллектив</b><span>И заряд позитивных эмоций на каждом занятии.</span></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 6 · ДОВЕРИЕ: руководитель студии (факты только из ВК и карточки) -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#121214" id="trener" aria-label="Руководитель студии">
+      <div class="v-wrap tr">
+        <figure class="tr__fig" data-v-reveal="up" data-v-reveal-at="0.12 0.45">
+          <img src="assets/team.webp" alt="Команда студии IDANCE с кубком на международном чемпионате" width="1200" height="1600" loading="lazy" decoding="async">
+        </figure>
+        <div class="tr__copy" data-v-in data-v-stagger="70">
+          
+          <h2 class="v-display v-display--lg tr__name">Илья Токарев</h2>
+          <p class="v-lede">Основатель и руководитель студии. Ставит номера, ведёт команду на соревнования и переживает вместе с ребятами – об этом пишут в отзывах.</p>
+          <ul class="tr__facts">
+            <li><b>Студия</b><span>Десять лет студии – Илья основал её и руководит</span></li>
+            <li><b>В эфире</b><span>Рассказал о студии на радио Europa Plus</span></li>
+            <li><b>Награды</b><span>Кубки и грамоты студии с соревнований</span></li>
+            <li><b>Стили</b><span>Современные, hip-hop, джаз, хореография, народные</span></li>
+          </ul>
+          <ul class="tr__for">
+            <li><b>О нём говорят родители и ученики</b></li>
+            <li>«Илья отличный хореограф, друг и наставник»</li>
+            <li>«Перед соревнованиями Илья дает четкие наставления ребятам»</li>
+            <li>«Илья всегда идет на встречу, при решении вопросов»</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · ДОВЕРИЕ: отзывы с Яндекс.Карт (дословно) -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#0b0b0c" id="otzyvy" data-slot-optional aria-label="Отзывы с Яндекс.Карт">
+      <div class="v-wrap reviews">
+        <div class="reviews__head" data-v-in data-v-stagger="60">
+          <h2 class="v-display v-display--md">Что пишут на Яндекс Картах</h2>
+          <div class="reviews__rating">
+            <span class="reviews__num v-nums">5,0</span>
+            <span class="reviews__stars" style="--r: 5.0" role="img" aria-label="рейтинг 5,0 из 5"></span>
+            <span class="v-soft">35 отзывов</span>
+            <a href="https://yandex.ru/maps/org/idance/207614307878/" target="_blank" rel="noopener">Читать все отзывы</a>
+          </div>
+          <p class="reviews__fact">Отзывы скопированы с карточки на Яндекс Картах без правок.</p>
+        </div>
+        <ul class="reviews__list" data-v-in data-v-stagger="90">
+          <li class="reviews__item reviews__item--big">
+            <p class="reviews__text">«хожу сюда уже 7 лет, за это время сильно прокачала не только свой уровень танца, но и уверенность в себе»</p>
+            <p class="reviews__meta"><b>Катя Тихомирова</b> · 20 августа 2025 · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__text">«С самого первого занятия ребенок почувствовал атмосферу дружелюбия и поддержки.»</p>
+            <p class="reviews__meta"><b>Екатерина Чугункина</b> · 19 августа 2025 · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__text">«На занятиях всегда присутствует доброжелательная атмосфера. Индивидуальный подход к каждому ребенку, учитываются возрастные особенности детей.»</p>
+            <p class="reviews__meta"><b>Наталья С.</b> · 19 августа 2025 · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8 · ДЕЙСТВИЕ: запись на первое занятие -->
+    <section data-v-act="pin" data-v-span="1.1" data-v-drift="#121214" id="zapis" aria-label="Записаться на первое занятие">
+      <div data-v-stage>
+        <div class="close" data-v-spotlight>
+          <div class="close__inner">
+            <div class="close__copy" data-v-in data-v-stagger="110">
+              <img class="burst" src="assets/burst.webp" alt="" width="700" height="700" loading="lazy" decoding="async">
+              <h2 class="v-display v-display--lg">Приходите на первое занятие – взрываем танцы вместе</h2>
+              <p class="v-lede">Позвоните, напишите в группу ВКонтакте или лично Илье Токареву. Назовите возраст – подберём группу.</p>
+              <div class="close__cta">
+                <a class="v-btn" href="tel:+79207471515" rel="noopener" data-v-magnet="0.22" data-v-rise="0">Записаться на первое занятие</a>
+                <a class="close__tel" href="tel:+79207471515">+7 (920) 747-15-15</a>
+              </div>
+              <p class="close__hint">Не любите звонить – пишите в сообщения группы: <a href="https://vk.ru/idance71" target="_blank" rel="noopener">vk.ru/idance71</a>.</p>
+              <div class="close__meta">
+                <span><b>Адрес</b>Ул. Смидович, 12Б, цокольный этаж, Тула</span>
+                <span><b>Часы занятий</b>Назовём при записи</span>
+                <span><b>Возраст</b>4-6, 7-9, 10-13, 14-17, 20+</span>
+                <span><b>ВКонтакте</b>IDANCE | Студия танца | Тула</span>
+              </div>
+            </div>
+            <figure class="close__fig" data-v-in data-v-in-self>
+              <img src="assets/close.webp" alt="Кубки и грамоты студии IDANCE под неоновой вывеской" width="900" height="1200" loading="lazy" decoding="async">
+            </figure>
+          </div>
+          <footer class="foot">
+            <span>IDANCE · студия танца · Тула</span>
+            <span class="foot__more">Танцы для детей и взрослых от 4 лет – по записи, первое занятие по телефону</span>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  // На телефоне пины короче: data-v-span из CSS не поменять, правим атрибут до монтирования.
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.4');
+    document.getElementById('ucheniki').setAttribute('data-v-span', '1.5');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: подложка после 40 px прокрутки, чтобы текст секций не просвечивал.
+  (function () {
+    var bar = document.querySelector('.bar'), on = null;
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+  })();
+
+  // Фирменный ход «карточки до/после»: переворот живёт в CSS от --v-p; скрипт только помечает,
+  // какая сторона сейчас лицом (aria-hidden для читалок и класс is-after для своих стилей).
+  (function () {
+    var act = document.getElementById('ucheniki'), cards = act.querySelectorAll('.card');
+    var starts = [.12, .4, .68], last = [], live = false;
+    function tick() {
+      var p = parseFloat(getComputedStyle(act).getPropertyValue('--v-p')) || 0;
+      cards.forEach(function (c, i) {
+        var after = p >= starts[i] + .1;
+        if (after !== last[i]) {
+          last[i] = after; c.classList.toggle('is-after', after);
+          c.querySelector('.face--pre').setAttribute('aria-hidden', after ? 'true' : 'false');
+          c.querySelector('.face--post').setAttribute('aria-hidden', after ? 'false' : 'true');
+        }
+      });
+      if (live) requestAnimationFrame(tick);
+    }
+    new IntersectionObserver(function (es) { live = es[0].isIntersecting; if (live) tick(); }).observe(act);
+    tick();
+  })();
+</script>
+</body>
+</html>
